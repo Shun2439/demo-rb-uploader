@@ -1,0 +1,12 @@
+<% if @error %>
+  <p style="color: red;"><%= @error %></p>
+<% end %>
+
+<% @images_path.each do |b| %>
+  <a href="/files/<%= b[:name] %>"><%= b[:name] %></a>, <%= b[:size] %>, <%= b[:mtime] %><br>
+<% end %>
+<p>
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <input type="file" name="file">
+  <input type="submit" name="submit">
+</form>
