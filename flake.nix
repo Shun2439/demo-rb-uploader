@@ -29,7 +29,7 @@
             ruby_3_1
             bundix
           ];
-          shellHook = "fish";
+          shellHook = "exec fish";
       };
   });
 }
