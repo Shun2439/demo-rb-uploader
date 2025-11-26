@@ -1,2 +1,6 @@
 /public
 /vendor
+
+*.db
+
+.env*
