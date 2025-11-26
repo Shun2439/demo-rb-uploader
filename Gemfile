@@ -5,12 +5,15 @@ source 'https://rubygems.org'
 # gem "rails"
 
 gem 'sinatra'
-gem 'webrick'
+# gem 'webrick'
 
-gem 'sqlite3'
 gem 'activerecord'
+gem 'sqlite3'
 
-gem 'puma'
-gem 'rackup'
+# gem 'puma'
+# gem 'rackup'
 
-gem 'rubocop', require: false
+# gem 'rubocop', require: false
+
+gem "rackup", "~> 2.2"
+gem "puma", "~> 7.1"

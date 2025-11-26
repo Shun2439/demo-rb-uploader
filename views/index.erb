@@ -4,6 +4,10 @@
 
 <% @images_path.each do |b| %>
   <a href="/files/<%= b[:name] %>"><%= b[:name] %></a>, <%= b[:size] %>, <%= b[:mtime] %><br>
+  <form action="/delete" method="post">
+    <input type="hidden" name="file" value="<%= b[:name] %>">
+    <input type="submit" value="Delete">
+  </form>
 <% end %>
 <p>
 <form action="/upload" method="post" enctype="multipart/form-data">

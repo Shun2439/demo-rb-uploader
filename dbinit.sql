@@ -1,0 +1,16 @@
+create table account (
+    id varchar(20) primary key,
+    hashed varchar(70),
+    salt varchar(10)
+);
+
+create table files (
+    id integer primary key,
+    userid varchar(150),
+    filename varchar(150),
+    upload_date integer,
+    size integer
+);
+
+insert into account values('diplo', '7fba80a3642579984776939f13f769254fe1db36e9ca41d7b598e2c1d93ec52a', 'PQ');
+insert into account values('allo', 'd12354b521bdc4bcd0de3959a378176112ef3e4d5343ba887c276d13d6d76e61', 'RS');
